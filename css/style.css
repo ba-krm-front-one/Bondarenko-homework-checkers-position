@@ -1,0 +1,166 @@
+body{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+
+}
+.board {
+	border: 3px solid #000;
+	position: relative;
+	text-align: center;
+	margin: 1% auto;
+	width: 45vw;
+	height: 45vw;
+}
+
+.yb-board--line{
+	font-size: 0;
+	padding-left: 0;
+	margin: auto;
+}
+.yb-board--item{
+	display: inline-block;
+	width: 12.5%;
+	padding-top: 12.5%;
+}
+
+.yb-board--line:nth-child(odd) .yb-borad--item:nth-child(odd){
+	background: #ffffff;
+}
+.yb-board--line:nth-child(odd) .yb-board--item:nth-child(even){
+	background: #000000;
+}
+
+.yb-board--line:nth-child(even) .yb-board--item:nth-child(odd){
+	background: #000000;
+}
+
+.yb-board--line:nth-child(even) .yb-board--item:nth-child(even){
+	background: #ffffff;
+}
+
+.checkers{
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+	 position: absolute;
+ }
+.checkers__img-black--black{
+	font-size: 0;
+	padding-left: 0;
+}
+
+.checker__img-black--black{
+	display: inline-block;
+	width: 12.5%;
+	margin-left: 12.5%;
+}
+
+.checkers__img-black--black:nth-child(even){
+	padding-right: 0;
+}
+
+.checkers__img-black--black:nth-child(even) .checker__img-black--black{
+	margin-right: 12.5%;
+	margin-left: 0;
+}
+
+
+.checkes-white{
+	left: 0;
+	right: 0;
+	bottom: -0.5%;
+	position: absolute;
+}
+.checkes-white__img-white--white{
+	font-size: 0;
+	padding-left: 0;
+
+}
+
+.checke-white__img-white--white{
+	display: inline-block;
+	width: 12.5%;
+	margin-right: 12.5%;
+}
+.checkes-white__img-white--white:nth-child(even){
+	padding-left: 0;
+}
+
+.checkes-white__img-white--white:nth-child(even) .checke-white__img-white--white{
+	margin-left: 12.5%;
+	margin-right: 0;
+}
+img{
+	border-radius: 50%;
+}
+
+img:hover{
+	box-shadow: 0 0 30px red;
+}
+
+
+
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
